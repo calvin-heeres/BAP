@@ -1,0 +1,274 @@
+:root { 
+    /*https://coolers.co/palette/780000-c1121f-fdf0d5-003049-669bbc */
+    --prussian-blue: #003049;
+    --superiority-blue: #669BBC;
+    --papaya: #FDF0D5;
+    --venetian-red: #C1121F;
+    --barn-red: #780000;
+    --font-weight-normal: 300;
+    --font-weight-bold: 500;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--barn-red);
+    color: #333333;
+    font-family: 'mukta', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+a, a:hover{
+    color: var(--prussian-blue);
+    text-decoration: none;
+    font-weight : var(--font-weight-bold);
+}
+
+hr {
+margin: 1rem 0;
+height: 2px;
+color: var(--superiority-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: 'mukta', sans-serif, cursive;
+    color: var(--superiority-blue);
+    font-weight: var(--font-weight-normal);
+    line-height: 1;
+}
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    color: var(--papaya);
+    font-size: 4.8rem;
+    text-shadow: 1px 1px 3px #333;
+    margin-bottom: 1.5rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.drank-lijst__naam{
+    background-color: var(--papaya);
+    box-shadow: 2px 2px 10px #333;
+    border: 2px solid white;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.drank-lijst__foto{
+    padding: 0;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+.drank-lijst h2{
+    font-size: 2.4rem;
+    font-weight: normal;
+    background-color: var(--venetian-red);
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+}
+
+.drank-lijst header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--prussian-blue);
+}
+
+.drank-lijst h3{
+    font-size: 1.8rem;
+    font-weight: normal;
+    background-color: var(--superiority-blue);
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.drank-lijst header em{
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.drank-lijst p{
+    font-size: 1.6rem;
+    color: #333333;
+    padding: 0.75rem 1rem;
+    margin: 0;
+}
+
+.drank-lijst_link{
+    display: inline-block;
+    font-size: 1.6rem;
+    background-color: white;
+    color: var(--prussian-blue);
+    border: 2px solid var(--superiority-blue);
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 1rem;
+    align-self: flex-end;
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+}
+
+.drank-lijst_link:hover{
+    background-color: var(--superiority-blue);
+    color: white;
+}
+
+
+/*media queries*/
+@media all and (min-width: 900px) {
+    .drank-lijst{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .drank-lijst{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .drank-lijst{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*drank details*/
+
+.drank-info{
+    background-color: var(--papaya);
+}
+
+.drank-info header{
+    background-color: white;
+    padding: 2rem;
+}
+    
+
+.drank-info figure {
+    height: 50rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: inset 1px 1px 10px #333333;
+}
+
+.drank-info p {
+    margin : 0 2rem 2rem 2rem;
+}
+
+.drank-info a{
+    display: inline-block;
+    margin: 02rem 2rem 2rem;
+}
+
+.drank-info figure em {
+    padding: 1rem;
+    font-size: 3rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px var(--prussian-blue);
+    background-color: var(--prussian-blue);
+    color: white;
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    border: 2px solid white;
+}
+
+.drank-info h2 {
+    color: var(--prussian-blue);
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.drank-info p {
+    font-size: 1.6rem;
+}
+
+.drank-sidebar{
+    background-color :white ;
+    padding: 2rem;
+    font-size: 2rem;
+    flex-grow: 1;
+}
+
+.drank-sidebar h3{
+    font-size: 2rem;
+    background-color: var(--superiority-blue);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.drank-sidebar li{
+    font-size: 1.6rem;
+    color: var(--prussian-blue)
+}
+
+
+.drank-sidebar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media all and (min-width: 900px) {
+    .drank-details section{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .drank-details article{
+        width: 60%;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .drank-details article{
+        width: 70%;
+    }
+}
+
+@media all and (min-width: 1600px){
+    .drank-details article{
+        width: 80%;
+    }
+}
