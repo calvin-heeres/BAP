@@ -17,7 +17,7 @@ if($check_int == false){
     exit;
 }
 
-$statement = $connection->prepare('SELECT * FROM `producten` WHERE id=?' . $id);
+$statement = $connection->prepare('SELECT * FROM makeitrain.producten WHERE id=?');
 $params = [$id];
 $statement->execute($params);
 $drank = $statement->fetch(PDO::FETCH_ASSOC);
@@ -58,12 +58,10 @@ $drank = $statement->fetch(PDO::FETCH_ASSOC);
             <aside class="drank-sidebar">
                 <h3>Andere dranken</h3>
                 <ul>
-                <li>Cantina</li>
-                    <li>Mucho</li>
-                    <li>Riporta</li>
-                    <li>StoneLake</li>
-                    <li>Whale</li>
-                    <li>Wijn</li>
+                    <li>Bacardi Carta Negra</li>
+                    <li>Bacardi Añejo Cuatro Años</li>
+                    <li>Smirnoff vodka</li>
+                    <li>Esbjaerg Vodka</li>
                 </ul>
             </aside>
         </section>

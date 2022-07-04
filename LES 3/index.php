@@ -2,7 +2,7 @@
 require 'functions.php';
 $connection = dbConnect ( ) ;
 
-$result = $connection->query('SELECT * FROM `producten`')
+$result = $connection->query('SELECT * FROM makeitrain.producten');
 
 ?>
 
