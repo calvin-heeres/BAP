@@ -180,9 +180,9 @@ img{
     
 
 .drank-info figure {
-    height: 50rem;
+    height: 60rem;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-start;

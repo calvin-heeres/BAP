@@ -29,28 +29,25 @@ $drank = $statement->fetch(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producten</title>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mukta:wght@300;500&display=swap">
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container drank-details">
         <h1>Mixen!</h1>
         <section>
             <article class="drank-info">
                 <header>
-                    <h2><?php echo $row['titel']; ?></h2>
-                    <h3><?php echo $row['liter']; ?></h3>
+                    <h2><?php echo $drank['titel']; ?></h2>
+                    <h3><?php echo $drank['liter']; ?></h3>
                 </header>
-                <figure style="background-image: url(images/<?php echo $row['foto']; ?>)">
-                    <em>€<?php echo $row['prijs']; ?></em>
+                <figure style="background-image: url(images/<?php echo $drank['foto']; ?>)">
+                    <em>€<?php echo $drank['prijs']; ?></em>
                 </figure>
                 <p>
-                <?php echo $row['beschrijving']; ?>
+                <?php echo $drank['beschrijving']; ?>
                 </p>
                 <hr>
                 <a href="index.php">Terug naar het overzicht</a>
@@ -58,10 +55,10 @@ $drank = $statement->fetch(PDO::FETCH_ASSOC);
             <aside class="drank-sidebar">
                 <h3>Andere dranken</h3>
                 <ul>
-                    <li>Bacardi Carta Negra</li>
-                    <li>Bacardi Añejo Cuatro Años</li>
-                    <li>Smirnoff vodka</li>
-                    <li>Esbjaerg Vodka</li>
+                    <li>Bacardi razz</li>
+                    <li>Bacardi lemon</li>
+                    <li>Smirnoff Ice</li>
+                    <li>Old Captain Rum</li>
                 </ul>
             </aside>
         </section>
